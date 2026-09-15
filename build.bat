@@ -58,7 +58,7 @@ if errorlevel 1 (
 
 echo.
 echo [4/4] 清理临时文件...
-if exist dist\Word2PDF.exe rmdir /s /q build spec 2>nul
+if exist dist\Word2PDF.exe rmdir /s /q build 2>nul & if exist Word2PDF.spec del /q Word2PDF.spec 2>nul
 
 echo ========================================
 echo   打包完成！

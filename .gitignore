@@ -1,0 +1,44 @@
+# ===== Python 缓存 =====
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ===== 虚拟环境：一律排除（含大量本机绝对路径，且体积巨大）=====
+venv/
+.venv/
+env/
+ENV/
+virtualenv/
+
+# ===== PyInstaller 打包产物 =====
+build/
+dist/
+*.spec
+*.manifest
+warn-*.txt
+xref-*.html
+
+# ===== 可执行文件走 GitHub Releases，不进仓库历史 =====
+*.exe
+*.msi
+*.dll
+*.pdb
+
+# ===== 编辑器 / 系统文件 =====
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== 本地配置与凭据（保险起见）=====
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json

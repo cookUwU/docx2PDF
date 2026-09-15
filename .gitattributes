@@ -1,0 +1,21 @@
+# 统一换行符：仓库内一律以 LF 存储，避免跨平台协作时出现整文件 diff
+* text=auto
+
+# Windows 批处理需在工作区保留 CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 源码与文档统一 LF
+*.py  text eol=lf
+*.md  text eol=lf
+*.txt text eol=lf
+.gitignore     text eol=lf
+.gitattributes text eol=lf
+
+# 二进制文件不做行尾转换
+*.exe binary
+*.dll binary
+*.png binary
+*.jpg binary
+*.ico binary
+*.pdf binary
