@@ -1,0 +1,3 @@
+# 运行 Word2PDF 仅需 Python 标准库，无需第三方依赖。
+# 打包成 exe 时才需要 pyinstaller（见 build.bat，会自动安装）。
+pyinstaller>=6.0.0
